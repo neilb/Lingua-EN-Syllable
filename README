@@ -1,0 +1,25 @@
+Lingua::EN::Syllable - Routine for estimating syllable count in words.
+
+Lingua::EN::Syllable provides one subroutine, syllable(), which
+estimates the number of syllables in the word passed to it.  It
+guesses correctly about 80-90% of the time, but it's smaller and
+faster than a dictionary lookup.  So you can't really use it for
+writing random haiku, but you can do things like estimate reading
+grade level.
+
+INSTALLATION
+
+Follow the typical steps:  after untarring the distribution into some
+random directory, do
+
+  perl Makefile.PL
+  make
+  make test
+  make install
+
+
+
+Greg Fast <gdf@imsa.edu>
+11 Sept 98
+
+
