@@ -135,10 +135,16 @@ Contractions are not well supported.
 Compound words (like "lifeboat"), where the first word ends in a silent 'e'
 are counted with an extra syllable.
 
-=head1 COPYRIGHT
+=head1 REPOSITORY
 
-Distributed under the same terms as Perl.
-Contact the author with any questions.
+L<https://github.com/neilbowers/Lingua-EN-Syllable>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 1999 by Greg Fast E<lt>gdf@imsa.eduE<gt>
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =head1 AUTHOR
 

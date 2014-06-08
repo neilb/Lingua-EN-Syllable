@@ -2,6 +2,7 @@ Revision history for Perl module Lingua::EN::Syllable
 
 0.26 2014-06-10
     - Switched to Dist::Zilla
+    - Added github repo to pod, and added std text for LICENSE AND COPYRIGHT
     - Added Changes file
 
 0.251 1999-02-04 GREGFAST
