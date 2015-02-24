@@ -1,6 +1,9 @@
 Revision history for Perl module Lingua::EN::Syllable
 
-0.26 2014-06-10
+0.27 2015-02-24 NEILB
+    - Refactored test to be data-driven using Test::More
+
+0.26 2014-06-10 NEILB
     - Switched to Dist::Zilla
     - Added github repo to pod, and added std text for LICENSE AND COPYRIGHT
     - Added Changes file

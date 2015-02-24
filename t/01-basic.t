@@ -1,21 +1,21 @@
-# Before `make install' is performed this script should be runnable with
-# `make test'. After `make install' it should work as `perl test.pl'
+#! perl
 
-######################### We start with some black magic to print on failure.
+use 5.006;
+use strict;
+use warnings;
 
-# Change 1..1 below to 1..last_test_to_print .
-# (It may become useful if the test is moved to ./t subdirectory.)
+use Lingua::EN::Syllable qw/ syllable /;
+use Test::More 0.88;
 
-BEGIN { $| = 1; print "1..2\n"; }
-END {print "not ok 1\n" unless $loaded;}
-use Lingua::EN::Syllable;
-$loaded = 1;
-print "ok 1\n";
-######################### End of black magic.
+my %EXPECTED_SYLLABLE_COUNT =
+(
+    'hoopty'    => 2,
+);
 
-# Insert your test code below (better if it prints "ok 13"
-# (correspondingly "not ok 13") depending on the success of chunk 13
-# of the test code):
+plan tests => int(keys %EXPECTED_SYLLABLE_COUNT);
 
-print (syllable('hoopty')==2?"ok 2\n":"not ok 2\n");
-
+foreach my $word (sort keys %EXPECTED_SYLLABLE_COUNT) {
+    my $syllable_count = syllable($word);
+    cmp_ok($syllable_count, '==', $EXPECTED_SYLLABLE_COUNT{$word},
+           "number of syllables in '$word' should be $EXPECTED_SYLLABLE_COUNT{$word}");
+}
