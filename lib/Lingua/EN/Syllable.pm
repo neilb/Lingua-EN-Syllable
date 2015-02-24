@@ -69,6 +69,8 @@ sub syllable {
     my(@scrugg,$syl);
 
     $word =~ tr/A-Z/a-z/;
+    return 2 if $word eq 'w';
+    return 1 if length($word) == 1;
     $word =~ s/\'//g; # fold contractions.  not very effective.
     $word =~ s/e$//;
     @scrugg = split(/[^aeiouy]+/, $word); # '-' should perhaps be added?
@@ -81,7 +83,6 @@ sub syllable {
     foreach (@AddSyl) {
       $syl++ if $word=~/$_/;
     }
-    $syl++ if length($word)==1;	# 'x'
     # count vowel groupings
     $syl += scalar(@scrugg);
     $syl=1 if $syl==0; # got no vowels? ("the", "crwth")

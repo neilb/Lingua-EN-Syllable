@@ -10,6 +10,9 @@ use Test::More 0.88;
 my %EXPECTED_SYLLABLE_COUNT =
 (
     'hoopty'    => 2,
+    'bah'       => 1,
+    'I'         => 1,
+    'A'         => 1,
 );
 
 plan tests => int(keys %EXPECTED_SYLLABLE_COUNT);
