@@ -4,6 +4,7 @@ Revision history for Perl module Lingua::EN::Syllable
     - Refactored test to be data-driven using Test::More
     - Apart from 'w', single-letter words now return a syllable count of 1.
       RT#101177, thanks to jgstratt.
+    - Improved handling of words ending with -ism and -isms. RT#60988
 
 0.26 2014-06-10 NEILB
     - Switched to Dist::Zilla

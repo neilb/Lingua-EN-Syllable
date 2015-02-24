@@ -46,10 +46,12 @@ our @SubSyl;
 	   'iu',
 	   'io',
 	   'ii',
+       'microor',
 	   '[aeiouym]bl$',     # -Vble, plus -mble
 	   '[aeiou]{3}',       # agreeable
 	   '^mc',
-	   'ism$',             # -isms
+	   'ism$',             # -ism
+	   'isms$',            # -isms
 	   '([^aeiouy])\1l$',  # middle twiddle battle bottle, etc.
 	   '[^l]lien',         # alien, salient [1]
            '^coa[dglx].',      # [2]
