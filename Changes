@@ -1,5 +1,11 @@
 Revision history for Perl module Lingua::EN::Syllable
 
+0.28 2015-02-26 NEILB
+    - Made change suggested in RT#101178, thanks to jgstratt.
+      Words ending in -sed like "accused" generally have one fewer syllable
+      than the algorithm reports. I think this needs refinement, but it
+      seems like it's a general improvement.
+
 0.27 2015-02-24 NEILB
     - Refactored test to be data-driven using Test::More
     - Apart from 'w', single-letter words now return a syllable count of 1.

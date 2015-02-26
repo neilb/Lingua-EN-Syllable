@@ -36,6 +36,9 @@ my %EXPECTED_SYLLABLE_COUNT =
     baptisms        => 3,
     embolisms       => 4,
     methodisms      => 4,
+    executed        => 4,
+    accused         => 2,
+    dosed           => 1,
 
 );
 

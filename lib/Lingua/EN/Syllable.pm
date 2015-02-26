@@ -38,6 +38,7 @@ our @SubSyl;
 	   'iou',
 	   'sia$',
 	   '.ely$',             # absolutely! (but not ely!)
+       '[^td]ed$',          # accused is 2, but executed is 4
 	  );
 @AddSyl = ( 
 	   'ia',
