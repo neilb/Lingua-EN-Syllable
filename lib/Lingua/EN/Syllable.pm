@@ -139,6 +139,19 @@ Contractions are not well supported.
 Compound words (like "lifeboat"), where the first word ends in a silent 'e'
 are counted with an extra syllable.
 
+=head1 SEE ALSO
+
+L<Lingua::Phonology> - a framework of classes that provide
+"an object model for lingistic phonology and sound change".
+That includes syllables, and it looks like you can use it to
+get syllables for words, but from a quick skim of the doc I
+can't see exactly how.
+
+L<Text::Info> - a new module (as of late 2015) that provides
+information about text in Germanic languages,
+including syllable count.
+
+
 =head1 REPOSITORY
 
 L<https://github.com/neilb/Lingua-EN-Syllable>
