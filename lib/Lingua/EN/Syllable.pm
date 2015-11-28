@@ -141,7 +141,7 @@ are counted with an extra syllable.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Lingua-EN-Syllable>
+L<https://github.com/neilb/Lingua-EN-Syllable>
 
 =head1 COPYRIGHT AND LICENSE
 

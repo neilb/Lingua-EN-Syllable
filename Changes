@@ -1,5 +1,8 @@
 Revision history for Perl module Lingua::EN::Syllable
 
+0.28 2015-11-28 NEILB
+    - Updated github repo URL after changing my github username
+
 0.28 2015-02-26 NEILB
     - Made change suggested in RT#101178, thanks to jgstratt.
       Words ending in -sed like "accused" generally have one fewer syllable
