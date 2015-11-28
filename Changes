@@ -2,6 +2,7 @@ Revision history for Perl module Lingua::EN::Syllable
 
 0.28 2015-11-28 NEILB
     - Updated github repo URL after changing my github username
+    - Added [MetaJSON] to dist.ini so META.json is included in releases
 
 0.28 2015-02-26 NEILB
     - Made change suggested in RT#101178, thanks to jgstratt.
